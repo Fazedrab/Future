@@ -31,7 +31,7 @@ end
 local function getasset(path)
 	if not isfile(path) then
 		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/joeengo/Future/main/"..path:gsub("Future/assets", "assets"),
+			Url = "https://raw.githubusercontent.com/Fazedrab/Future/main/"..path:gsub("Future/assets", "assets"),
 			Method = "GET"
 		})
         print("[Future] downloading "..path.." asset.")
